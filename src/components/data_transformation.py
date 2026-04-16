@@ -63,14 +63,14 @@ class DataTransformation:
             
             def transform_data(data):
                 data['date'] = pd.to_datetime(data['date'])
-                cols_to_drop = ['market_id', 'latitude', 'longitude', 'admin1', 'admin2', 'market', 'priceflag', 'pricetype', 'currency']
+                cols_to_drop = ['market_id', 'latitude', 'longitude', 'admin1', 'admin2', 'market', 'priceflag', 'pricetype', 'currency', 'usdprice']
                 data_cleaned = data.drop(columns=cols_to_drop)
                 data_final = data_cleaned.copy()
                 war_start_date = pd.Timestamp("2026-02-28")
                 data_final['is_war'] = data_final['date'].apply(lambda x: 1 if x >= war_start_date else 0)
                 data_final['month'] = data_final['date'].dt.month
                 data_final['day'] = data_final['date'].dt.day
-                data_final = data_final.drop(columns=['date', 'price', 'commodity_id'])
+                data_final = data_final.drop(columns=['date', 'commodity_id'], errors='ignore')
             
                 return data_final.reset_index(drop=True)
             
@@ -79,7 +79,7 @@ class DataTransformation:
 
             preprocessing_obj = self.get_data_transformer_obj()
 
-            target_column_name = "usdprice"
+            target_column_name = "price"
 
             input_feature_train_df = train_df.drop(columns=[target_column_name], axis = 1)
             target_feature_train_df = train_df[target_column_name]

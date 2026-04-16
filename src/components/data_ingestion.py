@@ -29,7 +29,6 @@ class DataIngestion:
 
             df['date'] = pd.to_datetime(df['date'])
             df = df[df['date'] >= '2025-01-01']
-            df = df[df['usdprice'] < 200]
             logging.info("Filtering rows completed in Ingestion stage")
             
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path), exist_ok=True)

@@ -3,65 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Mizan | AI Price Forecasting</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <title>AI Mizan | Welcome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #042419;
-            font-family: 'Lora', serif;
-        }
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(rgba(4, 36, 25, 0.7), rgba(4, 36, 25, 0.9)), 
-                        url('https://www.transparenttextures.com/patterns/islamic-art.png');
-            text-align: center;
-            border-bottom: 5px solid #D4AF37;
-        }
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 5rem;
-            color: #D4AF37;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
-        }
-        p {
-            color: #FDF5E6;
-            font-size: 1.5rem;
-            letter-spacing: 2px;
-            margin-bottom: 40px;
-        }
-        .btn-gold {
-            background-color: #D4AF37;
-            color: #042419;
-            padding: 15px 45px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 0;
-            text-decoration: none;
-            transition: all 0.4s;
-            border: 2px solid #D4AF37;
-        }
-        .btn-gold:hover {
-            background-color: transparent;
-            color: #D4AF37;
-            transform: scale(1.05);
-        }
+        body { font-family: 'Outfit', sans-serif; }
     </style>
 </head>
-<body>
-    <div class="hero">
-        <div>
-            <h1>AI-MIZAN</h1>
-            <p>Advanced Food Price Analytics for the Iranian Market</p>
-            <a href="/predictdata" class="btn-gold">Enter Analysis Terminal</a>
+<body class="bg-[#020617] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+
+    <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-purple-600/20 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-cyan-600/20 rounded-full blur-[120px]"></div>
+
+    <div class="text-center z-10 px-6">
+        <div class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-cyan-500/20 mx-auto mb-6">
+            <span class="font-black text-3xl">M</span>
         </div>
+        <h2 class="text-sm font-black tracking-[0.4em] text-cyan-500 uppercase mb-4">Harnessing Neural Networks</h2>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            AI Mizan <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">Analytics</span>
+        </h1>
+        <p class="max-w-xl mx-auto text-slate-400 text-lg mb-10">
+            Advanced Machine Learning Food Price Predictor for the Iranian Market. Built for stability in volatile conditions.
+        </p>
+        
+        <a href="/predictdata" 
+           class="inline-block bg-gradient-to-r from-cyan-500 to-purple-600 px-10 py-4 rounded-full font-bold text-lg tracking-[0.2em] uppercase hover:shadow-[0_0_40px_rgba(6,182,212,0.5)] transition-all duration-300 hover:scale-105">
+            Launch Predictor 🚀
+        </a>
     </div>
+
+    <footer class="absolute bottom-0 left-0 w-full py-8 text-center z-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="h-[1px] w-1/3 mx-auto bg-gradient-to-r from-transparent via-slate-700 to-transparent mb-6"></div>
+            <p class="text-slate-500 text-[10px] md:text-sm tracking-[0.2em] font-light uppercase">
+                © 2026 AI MIZAN | DEVELOPED WITH <span class="text-cyan-500">⚡</span> BY 
+                <span class="text-cyan-500 font-bold hover:text-blue-400 transition-colors cursor-pointer border-b border-cyan-900 pb-1">YOUSEF-ELBEYALY</span>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
