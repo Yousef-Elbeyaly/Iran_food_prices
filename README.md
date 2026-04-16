@@ -43,22 +43,24 @@ In fluctuating economies, accurate data is the only stable metric. This project 
 Bash
 git clone [https://github.com/Yousef-Elbeyaly/Iran_food_price_predictor.git](https://github.com/Yousef-Elbeyaly/Iran_food_price_predictor.git)
 cd Iran_food_price_predictor
+```
 Install Dependencies:
-
+```
 Bash
 pip install -r requirements.txt
+```
 Run Locally:
-
+```
 Bash
 python app.py
 Access the app at http://127.0.0.1:5000
 ```
 
 👨‍💻 Developer
-** Yousef Elbeyaly **
+Yousef Elbeyaly 
 
-** LinkedIn: Yousef Elbeyaly **
+LinkedIn: Yousef Elbeyaly
 
-** GitHub: @Yousef-Elbeyaly **
+GitHub: @Yousef-Elbeyaly
 
 Developed with ⚡ by Yousef Elbeyaly - 2026
